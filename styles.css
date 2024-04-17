@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral Colors */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  /* Fonts */
+  --big-shoulders-display: "Big Shoulders Display", sans-serif; /* 700 */
+  --lexend-deca: "Lexend Deca", sans-serif; /* 400 */
+}
+
+body {
+  background: var(--very-light-gray);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: 50%;
+  min-height: 60%;
+}
+
+.sedans {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.sedans-image {
+  width: 4rem;
+}
+
+.sedans-title {
+  color: var(--transparent-white);
+  font-family: var(--big-shoulders-display);
+  font-size: 2rem;
+}
+
+.sedans-text {
+  color: var(--transparent-white);
+  font-family: var(--lexend-deca);
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.sedans-button {
+  background-color: var(--transparent-white);
+  border: none;
+  color: var(--bright-orange);
+  font-family: var(--lexend-deca);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1rem;
+  text-align: center;
+  width: 60%;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover {
+    background: var(--bright-orange);
+    border: 0.8px solid var(--transparent-white);
+    color: var(--transparent-white);
+    transition: all 0.3s;
+  }
+}
+
+.suvs {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--dark-cyan);
+}
+.suvs-image {
+  width: 4rem;
+}
+
+.suvs-title {
+  color: var(--transparent-white);
+  font-family: var(--big-shoulders-display);
+  font-size: 2rem;
+}
+
+.suvs-text {
+  color: var(--transparent-white);
+  font-family: var(--lexend-deca);
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.suvs-button {
+  background-color: var(--transparent-white);
+  border: none;
+  color: var(--dark-cyan);
+  font-family: var(--lexend-deca);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1rem;
+  text-align: center;
+  width: 60%;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover {
+    background: var(--dark-cyan);
+    border: 0.8px solid var(--transparent-white);
+    color: var(--transparent-white);
+    transition: all 0.3s;
+  }
+}
