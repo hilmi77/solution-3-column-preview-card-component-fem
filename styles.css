@@ -32,8 +32,7 @@ body {
 
 .card {
   display: flex;
-  width: 50%;
-  min-height: 60%;
+  width: 59%;
 }
 
 .sedans {
@@ -71,9 +70,11 @@ body {
   font-weight: 500;
   padding: 1rem;
   text-align: center;
-  width: 60%;
+  width: 10rem;
   border-radius: 50px;
   cursor: pointer;
+  white-space: nowrap;
+
   &:hover {
     background: var(--bright-orange);
     border: 0.8px solid var(--transparent-white);
@@ -115,13 +116,59 @@ body {
   font-weight: 500;
   padding: 1rem;
   text-align: center;
-  width: 60%;
+  width: 10rem;
   border-radius: 50px;
   cursor: pointer;
   &:hover {
     background: var(--dark-cyan);
-    border: 0.8px solid var(--transparent-white);
+    border: 0.1px solid var(--transparent-white);
     color: var(--transparent-white);
-    transition: all 0.3s;
+    transition: all 0.3s 0.1s;
+  }
+}
+
+.luxury {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+.luxury-image {
+  width: 4rem;
+}
+
+.luxury-title {
+  color: var(--transparent-white);
+  font-family: var(--big-shoulders-display);
+  font-size: 2rem;
+}
+
+.luxury-text {
+  color: var(--transparent-white);
+  font-family: var(--lexend-deca);
+  font-size: 1rem;
+  margin-bottom: 5rem;
+}
+
+.luxury-button {
+  background-color: var(--transparent-white);
+  border: none;
+  color: var(--very-dark-cyan);
+  font-family: var(--lexend-deca);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 1rem;
+  text-align: center;
+  width: 10rem;
+  border-radius: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+  &:hover {
+    background: var(--very-dark-cyan);
+    border: 0.1px solid var(--transparent-white);
+    color: var(--transparent-white);
+    transition: all 0.3s 0.1s;
   }
 }
