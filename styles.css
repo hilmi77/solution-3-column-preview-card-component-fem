@@ -21,18 +21,24 @@
 
 body {
   background: var(--very-light-gray);
+  margin: 0;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 1.1rem;
 }
 
 .card {
   display: flex;
-  width: 59%;
+  width: 100%;
+  max-width: 1200px;
+}
+section {
+  flex: 1;
 }
 
 .sedans {
@@ -170,5 +176,17 @@ body {
     border: 0.1px solid var(--transparent-white);
     color: var(--transparent-white);
     transition: all 0.3s 0.1s;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+  }
+  .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury {
+    border-radius: 0 0 10px 10px;
   }
 }
